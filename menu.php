@@ -2,9 +2,9 @@
 	//verificar si existe una sesion
 <?php
 	session_start();
-echo "hola1";
+
 	if (isset($_SESSION['valida']) && $_SESSION['valida'] == true){
-		<html>
+	?>	<html>
 			<header>
 					<meta charset="utf-8">
 	
@@ -17,7 +17,8 @@ echo "hola1";
 				</form>
 			</body>
 		</html>
-echo "hola";
+		<?php
+
 	} else {
 
 		header('Location: index.php');

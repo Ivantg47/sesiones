@@ -13,10 +13,8 @@ $resultado = pg_query($con,$consulta);
 $resultado = pg_fetch_assoc($resultado);
 $miusuario = $resultado['usuario'];
 $micontrasena = substr($resultado['contrasena'], 2);
-$ded = ($micontrasena = $contrasena);
-echo $ded;
 
-/*
+
 if ($usuario == $miusuario && $contrasena == $micontrasena) {
 	//echo "coincide";
 	//se crea sesion
@@ -27,9 +25,9 @@ if ($usuario == $miusuario && $contrasena == $micontrasena) {
 	header('Location: menu.php');	
 
 } else {
-	//echo "error";
+	echo "error";
 	//retornar index con error
-	header('Location: index.php?error=1');
-} */
+	//header('Location: index.php?error=1');
+} 
 ?>
 
